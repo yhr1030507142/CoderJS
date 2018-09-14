@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+.a{
+    background: red;
+    border: 1px solid pink;
+    border-radius: 40%;
+    font-size: 20px;
+    text-align: center;
+}
+span{
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+    <button onclick="aa()">获取</button>
+        <span>这里是个SPAN</span>
+</body>
+</html>
+<script>
+    function aa(){
+        $('span').text('宽度：'+$('span').width()+'px'+'长度'+$('span').height()+'px');
+        alert('宽度：'+$('span').width()+'px'+'长度'+$('span').height()+'px');
+    }
+    // $('span').click(function(e){
+    //     $('span').css('background','yellow');
+        
+    // });
+  
+</script>

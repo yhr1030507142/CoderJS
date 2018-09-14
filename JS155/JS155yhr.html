@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+   
+  
+    </style>
+</head>
+<body>
+    <p>1这是第几行你猜，你强任你强！！！</p>
+    <p>2这是第几行你猜，你强任你强！！！</p>
+    <p>3这是第几行你猜，你强任你强！！！</p>
+    <p>4这是第几行你猜，你强任你强！！！</p>
+    <p>5这是第几行你猜，你强任你强！！！</p>
+    <p>6这是第几行你猜，你强任你强！！！</p>
+    <p>7这是第几行你猜，你强任你强！！！</p>
+    <p>8这是第几行你猜，你强任你强！！！</p>
+    <p>9这是第几行你猜，你强任你强！！！</p>
+    <p>10这是第几行你猜，你强任你强！！！</p>
+
+    <div></div><br>
+    <div id='div1'></div><br>
+    <div id='div2'></div>
+</body>
+</html>
+<script>
+    var text="";
+    for(var i=0;i < $('p').length;i++){
+        text +=$('p').eq(i).html()
+    }
+    $('div').text('全部文本'+text);
+    $('#div1').text('第一行'+$('p').eq(1).html());
+    $('#div2').text('最后一行'+$('p').last().html());
+   
+</script>
