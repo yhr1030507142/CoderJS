@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"> </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        span{
+            display: inline-block;
+            width: 50px;
+            height: 30px;
+            text-align: right;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+  <form action="">
+      <span>邮箱:</span>  <input type="email"><br>
+      <span>密码:</span>  <input type="password"><br>
+      <span id="aaa" style="color:white;background:red;border: 1px solid rgb(172, 77, 77,0.6);width: 100px;text-align: center">sign in</span>
+  </form>
+</body>
+</html>
+<script>
+$("input[type='email']").focus(function(){
+  $("input[type='email']").css("background-color","#FFFFCC");
+});
+
+$("input[type='password']").focus(function(){
+  $("input[type='password']").css("background-color","#ccc");
+});
+  $('#aaa').click(function(){
+      alert('注册成功');
+  });
+  $("input[type='email']").blur(function(){
+  $("input[type='email']").css("background-color","white");
+});
+
+$("input[type='password']").blur(function(){
+  $("input[type='password']").css("background-color","white");
+});
+
+</script>

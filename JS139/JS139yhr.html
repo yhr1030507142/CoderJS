@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"> </script>
+
+</head>
+<body>
+        <p id="b1">故天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能。</p>
+        <p id="b2">故天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能。</p>
+        <p id="b3">故天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能。</p>
+        <table cellpadding='10' cellspacing='10'> 
+            <tr>
+                <td>故天将降大任于是人也</td>
+                <td>故天将降大任于是人也</td>
+                <td>故天将降大任于是人也</td>
+            </tr>
+            
+            <tr>
+                    <td>故天将降大任于是人也</td>
+                    <td>故天将降大任于是人也</td>
+                    <td>故天将降大任于是人也</td>
+                </tr>
+                
+                <tr>
+                        <td>故天将降大任于是人也</td>
+                        <td>故天将降大任于是人也</td>
+                        <td>故天将降大任于是人也</td>
+                    </tr>
+                    <tr>
+                        <td>故天将降大任于是人也</td>
+                        <td>故天将降大任于是人也</td>
+                        <td>故天将降大任于是人也</td>
+                    </tr>
+        </table>
+        <input type="text"/>
+        <input type="password" id="pas"/>
+        <button>故天将降大任</button>
+</body> 
+</html>
+<script>
+      $.expr[':'].a1 = function(obj){
+            return $(obj).css({'background':'yellow'});
+        }
+        $.expr[':'].a2 = function(obj){
+            return $(obj).css({'background':'green'});
+        }
+        $.expr[':'].a3 = function(obj){
+            return $(obj).css({'background':'red'});
+        }
+        $.expr[':'].a4 = function(obj){
+            return $(obj).css({'border':'1px solid grey'});
+        }
+        $.expr[':'].a5 = function(obj){
+            return $(obj).css({'background':'purple'});
+        }
+        
+     
+        $('#b1:a1');
+        $('#b2:a2');
+        $('#b3:a3');
+        $('tr:first:a1');
+    
+        $('table:a4');
+        $("input[type='text']:a1");
+        $("input[type='password']:a2");
+      
+       
+       $('#pas:a5');
+       $('button:a3');
+
+           $('tr:odd:a2');
+        $('tr:even:a3');
+</script>
